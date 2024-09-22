@@ -1,0 +1,113 @@
+html, body {
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    background-color: #E4E4E4;
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 12px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.app-lista,
+.app-cadastro {
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    flex: 1;
+}
+
+.app-lista {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.app-cadastro {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.superior {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.botao-novo {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(42, 42, 42);
+    color: #fff;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 5%;
+}
+
+.botao {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.imagem {
+    height: 200px;
+    border: solid;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form {
+    flex: 4;
+}
+
+.form-linha {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color:#333;
+}
+
+.form-linha-esq {
+    flex: 1;
+}
+
+.form-linha-dir {
+    flex: 5;
+}
