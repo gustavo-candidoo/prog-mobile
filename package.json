@@ -30,5 +30,8 @@
         "ANDROIDX_CORE_VERSION": "1.6.+"
       }
     }
+  },
+  "dependencies": {
+    "pizzaria.admin": "file:"
   }
 }

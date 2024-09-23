@@ -1,89 +1,56 @@
-html, body {
-    height: 100vh;
-    box-sizing: border-box;
-}
-
 body {
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: none;
-    background-color: #E4E4E4;
+    background-color:#E4E4E4;
     font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
-    font-size: 12px;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.app {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.app-lista,
-.app-cadastro {
+    font-size:12px;
+    height:100vh;
+    margin:0px;
+    padding:0px;
     padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
-    flex: 1;
+    width:100%;
 }
 
 .app-lista {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
-}
-
-.app-cadastro {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
+    width:99%;
+    height: 95%
 }
 
 .superior {
-    flex: 1;
-    overflow-y: auto;
+    flex: 10;
+    overflow: auto;
 }
 
 .inferior {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+    flex: 1;
+}
+
+.linha {
+    position: relative;
+    padding: 10px;
+    border: solid;
+    font-size: 20px;
 }
 
 .botao-novo {
     width: 100%;
-    height: 50px;
+    height: 99%;
     font-size: 20px;
     font-weight: bold;
-    border: none;
-    background-color: rgb(42, 42, 42);
-    color: #fff;
 }
 
-.botoes {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin: 20px 5%;
-}
-
-.botao {
-    flex: 1;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    color: #333;
+.app-cadastro {
+    display: none;
+    flex-direction: column;
+    width:99%;
+    height: 90%
 }
 
 .imagem {
-    height: 200px;
+    flex: 4;
     border: solid;
     background-color: #cccccc;
     background-repeat: no-repeat;
@@ -101,7 +68,6 @@ body {
     margin-top: 10%;
     margin-left: 5%;
     margin-right: 5%;
-    color:#333;
 }
 
 .form-linha-esq {
@@ -110,4 +76,19 @@ body {
 
 .form-linha-dir {
     flex: 5;
+}
+
+.botoes {
+    padding-top: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.botao {
+    flex: 1;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid whitesmoke;
 }
